@@ -1,0 +1,10 @@
+dockerfile
+__pycache__
+
+.env
+*.ipynb
+.gitignore
+AlgoTrading_Results_Gen
+
+results/
+VirtualEnv/

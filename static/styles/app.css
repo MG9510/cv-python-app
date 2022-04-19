@@ -1,0 +1,1085 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.a-nav-links {
+    text-decoration: none;
+}
+
+.row, .btn {
+    width: 100%;
+}
+
+.docker-icon {
+    background-image: url("images/docker.png");
+}
+
+.tensorflow-icon {
+    background-image: url("images/tensorflow.jpg");
+}
+
+.scikit-icon {
+    background-image: url("images/scikit-learn.png");
+}
+
+.plotly-icon {
+    background-image: url("images/plotly.png");
+}
+
+.header-img {
+    background: url("images/Profile_Pic.jpg");
+}
+
+.nmims-img {
+    background-image: url("images/nm-mumbai.jpg");
+}
+
+.mitmanipal-img {
+    background-image: url("images/mit-manipal.jpg");
+}
+
+.coursera-img {
+    background-image: url("images/coursera.png");
+}
+
+.ibm-img {
+    background-image: url("images/ibm.png");
+}
+
+.tata-img {
+    background-image: url("images/tata.jpg");
+}
+
+.tensorflow-icon, .scikit-icon, .plotly-icon, 
+.header-img, .nmims-img, .mitmanipal-img, 
+.coursera-img, .ibm-img, .tata-img, .docker-icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-div {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-name-role-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.header-name, .header-role {
+    color: white;
+    text-align: center;
+}
+
+.header-hide-all-div {
+    display: flex;
+    height: 100%;
+}
+
+.header-hide-btn-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.header-social-all-div {
+    background-color: rgb(20, 30, 40);
+    height: 100%;
+}
+
+.header-social-highlt-all-div {
+    background-color: rgb(20, 30, 90);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-social-content-all-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-decoration: none;
+}
+
+.header-social-div {
+    width: 100%;
+    color: white;
+    padding: 3%;
+}
+
+.header-social-highlt-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    padding: 3%;
+}
+
+.header-social-icon, .header-social-text {
+    display: block;
+    width: 100%;
+    padding: 1%;
+}
+
+.header-social-highlt-icon, .header-social-highlt-text {
+    display: block;
+    width: 100%;
+}
+
+#contact-det-collapse {
+    display: block;
+    transition: ease 0.4s;
+}
+
+.content-all-div {
+    display: flex;
+    justify-content: center;
+}
+
+.content-collapse {
+    width: 95%;
+    margin-top: 1%;
+}
+
+.content-btn-div {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+}
+
+.content-nav-btn {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2.5px black, 0px 5px black, 
+    0px 7.5px black, 0px 10px black, 0px 12.5px black;
+    border: 3px solid black;
+}
+
+.content-nav-btn:focus {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2.5px red, 0px 5px red, 
+    0px 7.5px red;
+    border: 3px solid black;
+    transition: ease 0.4s;
+}
+
+.content-nav-btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2.5px blue, 0px 5px blue, 
+    0px 7.5px blue;
+    border: 3px solid black;
+    transition: ease 0.4s;
+}
+
+.content-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.content-btn-icon, .content-btn-nav-icon, .content-btn-text {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content-exp-colp-div {
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+    right: 0px;
+}
+
+.content-exp-div, .content-colp-div {
+    display: flex;
+    justify-content: center;        
+}
+
+.exp-colp-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.exp-colp-btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 3px solid red;
+}
+
+.workex-card-all-div {
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.workex-card-div {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workex-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.workex-card-header {
+    background-color: rgb(230, 230, 230);
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.workex-card-header-text {
+    padding: 2%;
+    text-align: center;
+}
+
+.workex-card-content {
+    color: black;
+    padding: 1%;
+}
+
+.education-card-div-all {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-card-div {    
+    background-color: white;
+    color: black;
+    margin-top: 2%;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+}
+
+.education-card-content {
+    padding: 3%;
+    text-align: left;
+    background-color: rgb(230, 230, 230);
+}
+
+.online-education-card-content {
+    padding: 2%;
+    text-align: left;
+    background-color: rgb(230, 230, 230);
+    border: 5px solid white;
+}
+
+.education-card-main-title {
+    margin-top: 2%;
+}
+
+.education-weblink {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.skillset-all-div {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillset-descr {
+    padding: 2%;
+}
+
+.skillset-div {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.skillset-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+.skillset-header-text {
+    display: block;
+    text-align: left;
+    padding: 2%;
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+.skill-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.skill-item-icon, .skill-item-text {
+    display: block;
+}
+
+.skill-item-bar-div {
+    display: block;   
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    background-color: black;
+}
+
+.skill-item-bar-xhigh, .skill-item-bar-high,
+.skill-item-bar-med, .skill-item-bar-low {
+    margin-left: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-item-bar-xhigh {
+    background-color: darkgreen;
+    color: white; 
+    width: 100%;  
+}
+
+.skill-item-bar-high {
+    background-color: green;
+    color: white; 
+    width: 75%; 
+}
+
+.skill-item-bar-med {
+    background-color: dodgerblue;
+    color: white; 
+    width: 50%; 
+}
+
+.skill-item-bar-low {
+    background-color: crimson;
+    color: white; 
+    width: 25%; 
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    
+    .tensorflow-icon, .scikit-icon, .plotly-icon,
+    .docker-icon {
+        height: 48px;
+        width: 48px;
+        border-radius: 24px;
+        border: 3px solid snow;        
+    }
+
+    .nmims-img, .mitmanipal-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin: 3%;
+        border-radius: 10px;        
+    }
+
+    .ibm-img, .tata-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin: 3%;
+        padding: 1%;
+        border-radius: 10px;        
+    }
+
+    .coursera-img {
+        max-width: 100%;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    .header-img {
+        width: 200px;
+        height: 200px;
+        object-fit:contain;
+        border-radius: 10px;
+        margin-top: 5%;
+    }   
+
+    .header-name-role-div {
+        margin-top: 5%;
+    }
+    
+    .header-name {
+        font-size: 36px;
+    }
+    
+    .header-role {
+        font-size: 24px;
+    }
+
+    .header-hide-all-div {
+        display: none;
+    }
+
+    .header-hide-btn-icon {
+        font-size: 12px;
+    }
+
+    .header-hide-btn-text {
+        font-size: 12px;
+    }
+
+    .header-social-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .header-social-text {
+        font-size: 18px;
+        text-align: left;
+        margin-left: 1%;
+    }
+
+    .header-social-highlt-icon {
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .header-social-highlt-text {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .content-btn-div {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .content-btn-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .content-btn-text {        
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .workex-card-title {
+        font-size: 22px;
+    }
+
+    .workex-card-subtitle {
+        font-size: 18px;
+    }
+
+    .education-card-icon {
+        font-size: 36px;
+    }
+
+    .education-card-main-title {
+        font-size: 22px;
+    }
+    
+    .education-card-title {
+        font-size: 20px;
+    }
+
+    .education-card-subtitle {
+        font-size: 16px;
+    }
+    
+    .education-card-text {
+        font-size: 16px;
+    }
+
+    .skillset-header-text {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skill-item-icon {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .skill-item-text {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .skill-item-bar-xhigh, .skill-item-bar-high,
+    .skill-item-bar-med, .skill-item-bar-low {
+        height: 24px;
+        font-size: 12px;
+        line-height: 24px; 
+    }
+
+    .exp-colp-btn {
+        width: 200px;
+        border: 5px solid snow;
+    }
+
+    .content-exp-text, .content-exp-icon, 
+    .content-colp-text, .content-colp-icon {
+        font-size: 18px;
+        margin: 3%;
+    }
+
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 990px) {
+
+    .tensorflow-icon, .scikit-icon, .plotly-icon,
+    .docker-icon {
+        height: 54px;
+        width: 54px;
+        border-radius: 28px;
+        border: 3px solid snow;
+    }
+
+    .nmims-img, .mitmanipal-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin: 3%;
+        border-radius: 10px;        
+    }
+
+    .ibm-img, .tata-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin: 3%;
+        border-radius: 10px;           
+    }
+
+    .coursera-img {
+        max-width: 100%;
+        height: 120px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin: 1%;
+    }
+
+    .header-img {
+        height: 120px;
+        width: 120px;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .header-name {
+        font-size: 36px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .header-role {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .header-hide-btn-icon {
+        font-size: 24px;
+    }
+
+    .header-hide-btn-text {
+        font-size: 16px;
+    }
+
+    .header-social-highlt-text {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .header-social-highlt-icon {
+        font-size: 24px;
+        text-align: right;
+    }
+  
+    .header-social-icon {
+        font-size: 32px;
+        text-align: center;
+    }
+
+     .header-social-text {
+        font-size: 18px;
+        margin-left: 1%;
+    }
+
+    .content-all-div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .content-btn-div {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .content-btn-icon {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .content-btn-nav-icon {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .content-btn-text {        
+        font-size: 32px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
+
+    .workex-card-title {
+        font-size: 28px;
+    }
+
+    .workex-card-subtitle {
+        font-size: 24px;
+    }
+
+    .education-card-icon {
+        font-size: 48px;
+    }
+
+    .education-card-main-title {
+        font-size: 28px;
+    }
+    
+    .education-card-title {
+        font-size: 24px;
+    }
+
+    .education-card-subtitle {
+        font-size: 22px;
+    }
+    
+    .education-card-text {
+        font-size: 20px;
+    }
+
+    .skillset-header-text {
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skill-item-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .skill-item-text {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .skill-item-bar-xhigh, .skill-item-bar-high,
+    .skill-item-bar-med, .skill-item-bar-low {
+        height: 35px;
+        font-size: 18px;
+        line-height: 35px; 
+    }
+
+    .exp-colp-btn {
+        width: 200px;
+        border: 5px solid snow;
+    }
+
+    .content-exp-text, .content-exp-icon, 
+    .content-colp-text, .content-colp-icon {
+        font-size: 18px;
+        margin: 3%;
+    }
+
+}
+
+/* Desktop/Laptops */
+@media (min-width: 990px) and (max-width: 1500px) {
+
+    .tensorflow-icon, .scikit-icon, .plotly-icon, 
+    .docker-icon {
+        height: 54px;
+        width: 54px;
+        border-radius: 18px;
+        padding: 2px;
+        border: 3px solid snow;
+    }
+
+    .nmims-img, .mitmanipal-img {
+        max-width: 100%;
+        height: 300px;
+        object-fit: contain;
+        margin: 3%;
+        border-radius: 10px;        
+    }
+
+    .ibm-img, .tata-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin: 3%;
+        border-radius: 10px;        
+    }
+
+    .coursera-img {
+        max-width: 100%;
+        height: 180px;
+        object-fit: contain;
+        /* border-radius: 10px; */
+    }
+
+    .header-img {
+        height: 180px;
+        width: 180px;
+        border-radius: 10px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .header-name {
+        font-size: 42px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .header-role {
+        font-size: 34px;
+        text-align: left;
+    }
+
+    .header-hide-btn-icon {
+        font-size: 24px;
+    }
+
+    .header-hide-btn-text {
+        font-size: 18px;
+    }
+
+    .header-social-highlt-text {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .header-social-highlt-icon {
+        font-size: 24px;
+        text-align: right;
+    }
+  
+    .header-social-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+     .header-social-text {
+        font-size: 18px;
+        text-align: left;
+        margin-left: 1%;
+    }
+
+    .content-btn-div {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .content-btn-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .content-btn-nav-icon {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .content-btn-text {        
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+    .workex-card-title {
+        font-size: 24px;
+    }
+
+    .workex-card-subtitle {
+        font-size: 20px;
+    }
+    
+    .education-card-icon {
+        font-size: 60px;
+    }
+
+    .education-card-main-title {
+        font-size: 24px;
+    }
+    
+    .education-card-title {
+        font-size: 22px;
+    }
+
+    .education-card-subtitle {
+        font-size: 20px;
+    }
+    
+    .education-card-text {
+        font-size: 18px;
+    }
+
+    .skillset-header-text {
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skill-item-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .skill-item-text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .skill-item-bar-xhigh, .skill-item-bar-high,
+    .skill-item-bar-med, .skill-item-bar-low {
+        height: 35px;
+        font-size: 14px;
+        line-height: 35px; 
+    }
+
+    .exp-colp-btn {
+        width: 250px;
+    }
+
+    .content-exp-text, .content-exp-icon, 
+    .content-colp-text, .content-colp-icon {
+        font-size: 18px;
+        margin: 3%;
+    }
+
+}
+
+/* Desktop/Laptops */
+@media (min-width: 1500px) {
+
+    .tensorflow-icon, .scikit-icon, .plotly-icon, 
+    .docker-icon {
+        height: 54px;
+        width: 54px;
+        border-radius: 27px;
+        border: 3px solid snow;
+    }
+
+    .nmims-img, .mitmanipal-img {
+        max-width: 100%;
+        height: 300px;
+        object-fit: contain;
+        margin: 3%;
+        border-radius: 10px;        
+    }
+
+    .ibm-img, .tata-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin: 3%;
+        border-radius: 10px;        
+    }
+
+    .coursera-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin: 1%;
+    }
+
+    .header-img {
+        height: 180px;
+        width: 180px;
+        border-radius: 10px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .header-name {
+        font-size: 48px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .header-role {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .header-hide-btn-icon {
+        font-size: 24px;
+    }
+
+    .header-hide-btn-text {
+        font-size: 18px;
+    }
+
+    .header-social-highlt-text {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .header-social-highlt-icon {
+        font-size: 24px;
+        text-align: right;
+    }
+  
+    .header-social-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+     .header-social-text {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 1%;
+    }
+
+    .content-btn-div {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .content-btn-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .content-btn-nav-icon {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .content-btn-text {        
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .card-text {
+        font-size: 24px;
+    }
+
+    .workex-card-title {
+        font-size: 30px;
+    }
+
+    .workex-card-subtitle {
+        font-size: 26px;
+    }
+
+    .education-card-icon {
+        font-size: 60px;
+    }
+
+    .education-card-main-title {
+        font-size: 32px;
+    }
+    
+    .education-card-title {
+        font-size: 30px;
+    }
+
+    .education-card-subtitle {
+        font-size: 27px;
+    }
+    
+    .education-card-text {
+        font-size: 24px;
+    }
+
+    .skillset-header-text {
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skill-item-icon {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .skill-item-text {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .skill-item-bar-xhigh, .skill-item-bar-high,
+    .skill-item-bar-med, .skill-item-bar-low {
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px; 
+    }
+
+    .exp-colp-btn {
+        width: 250px;
+    }
+
+    .content-exp-text, .content-exp-icon, 
+    .content-colp-text, .content-colp-icon {
+        font-size: 20px;
+        margin: 3%;
+    }
+
+}
+

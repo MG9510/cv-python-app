@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.75">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/5f7866376d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/app.css') }}">
+        <link rel="icon" href="data:,">
+        <title>CV-Manu-Gupta</title>
+    </head>
+    <body>
+        <div class="container-fluid mx-0 px-0">
+            <div class="row g-0">                
+                <div class="col-12 col-sm-8 col-lg-9 mx-0 px-0" id="main-col">
+                    <div class="header-div">
+                        <div class="row">
+                            <div class="col-12 col-sm-4 col-lg-4">
+                                <div class="header-img-div">
+                                    <i class="header-img"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-6">
+                                <div class="header-name-role-div ">
+                                    <p class="header-name">Manu Gupta</p>
+                                    <p class="header-role">Data Analyst</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-2 col-lg-2">
+                                <div class="header-hide-all-div">                                                                 
+                                    <button type="button" class="btn" onclick="toggleFunction_1()">
+                                        <div class="header-hide-btn-div">
+                                            <div class="header-hide-btn-text" id="hide-btn-txt">
+                                                Hide Details
+                                            </div>
+                                            <div class="header-hide-btn-icon">
+                                                <i class="fas fa-eye-slash" id="hide-btn-icon"></i>
+                                            </div>
+                                        </div>
+                                    </button>  
+                                </div>                               
+                            </div>
+                        </div>             
+                    </div>
+                    <div class="content-all-div row g-0 mx-0 px-0">
+                        <div class="content-btn-div col-12 col-sm-6 col-lg-12">
+                            <button id="about-me-btn" type="button" class="btn content-nav-btn" data-bs-toggle="collapse" data-bs-target="#abtme-collapse" aria-expanded="true" aria-controls="abtme-collapse">
+                                <div class="content-btn row">
+                                    <div class="content-btn-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-user-secret"></i>
+                                    </div>
+                                    <div class="content-btn-text col-8 col-sm-8 col-lg-8">
+                                        About Me
+                                    </div>
+                                    <div class="content-btn-nav-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse show content-collapse" id="abtme-collapse">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        A data analyst and a coder, a symbiosis of business & technical knowledge is what I bring to the table.           
+                                    </p>
+                                    <p class="card-text">
+                                        With nearly 4.5 years experience, I am well adept in creating complex SQLs, data wrangling large 
+                                        datasets and developing machine learning models to extract actionable insigths.               
+                                    </p>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-btn-div col-12 col-sm-6 col-lg-12">
+                            <button id="career-obj-btn" type="button" class="btn content-nav-btn" data-bs-toggle="collapse" data-bs-target="#goals-collapse" aria-expanded="false" aria-controls="goals-collapse">
+                                <div class="content-btn row">
+                                    <div class="content-btn-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-crosshairs"></i>
+                                    </div>
+                                    <div class="content-btn-text col-8 col-sm-8 col-lg-8">
+                                        Career Goals
+                                    </div>
+                                    <div class="content-btn-nav-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse content-collapse" id="goals-collapse">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        As we begin 2022, it would be safe to say that we have seen our lives change in the past two years.
+                                        The same holds true for businesses around the globe.
+                                    </p>
+                                    <p class="card-text">
+                                        I believe we are at the precipice of yet another series of inventions akin to the heat engine and electricity.
+                                        Technologies like cloud computing, deep learning, blockchain and quantum computing can lay the foundation 
+                                        that will power the next industrial revolution. Businesses can leverage such technologies to reinvent their 
+                                        business models in a post pandemic digital era.
+                                    </p>
+                                    <p class="card-text">
+                                        As a data enthusiast and a proficient coder, I aim to leverage the scale of enterprise data and powers of 
+                                        modern computing in revising our understanding of business environment and redesigning business processes 
+                                        with AI powered insights.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                 
+                        <div class="content-btn-div col-12 col-sm-4 col-lg-12">
+                            <button id="work-ex-btn" type="button" class="btn content-nav-btn" data-bs-toggle="collapse" data-bs-target="#work-collapse" aria-expanded="false" aria-controls="work-collapse">
+                                <div class="content-btn row">
+                                    <div class="content-btn-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="content-btn-text col-8 col-sm-8 col-lg-8">
+                                        Work-Ex 
+                                    </div>
+                                    <div class="content-btn-nav-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse content-collapse" id="work-collapse">
+                            <div class="workex-card-div">
+                                <div class="card workex-card">
+                                    <div class="workex-card-header row g-0">
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                            <i class="ibm-img"></i>
+                                        </div>
+                                        <div class="workex-card-header-text col-12 col-sm-6 col-lg-9">
+                                            <p class="workex-card-title">
+                                                <b>IBM</b> 
+                                            </p>                                             
+                                            <p class="workex-card-subtitle">
+                                                Data Analyst
+                                            </p>
+                                            <p class="workex-card-subtitle">
+                                                Ecosystem Marketing
+                                            </p>
+                                            <p class="workex-card-subtitle">
+                                                Oct 2020 - Present
+                                            </p>
+                                            <p class="workex-card-subtitle">
+                                                15 months
+                                            </p>
+                                        </div>                                                                                    
+                                    </div>
+                                    <br>
+                                    <div class="workex-card-content">
+                                        <div class="workex-card-title">
+                                            <b>Brief JD</b>
+                                        </div>
+                                        <br>
+                                        <ul class="card-text">
+                                            <li>
+                                                As a part of the core marketing analytics team, I assist in setting the data strategy by
+                                                leveraging marketing data and IBM systems to shape, direct and target marketing activities.
+                                            </li>
+                                            <li>
+                                                Setting such a data strategy requires analysis of the marketing pipeline to identify gaps and
+                                                call out focus areas for further deep dive analysis.
+                                            </li>
+                                            <li>
+                                                The tactical steps include data extraction using SQL, data wrangling, analysis and model development
+                                                using Python and deploying dashboard in Tableau and/or Python to communicate insights to business
+                                                stakeholders
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div class="workex-card-content">
+                                        <br>
+                                        <div class="workex-card-title">
+                                            <b>Recent Projects</b>
+                                        </div>
+                                        <br>
+                                        <div class="workex-card-subtitle" style="font-weight: bold; text-decoration: none;">
+                                            <u>1. Audience database curation & Analytics</u>
+                                        </div>
+                                        <ul class="card-text">
+                                            <li>
+                                                Build a client database centered around technology and related industries; specifically curated to extract insights to assist in IBM LinuxOne product launch.  
+                                            </li>
+                                            <li>
+                                                Deployed a web scrapper built in Python using the web testing module Selenium that extracts information such as Company Name, Industry, Mkt. Cap etc.
+                                            </li>
+                                            <li>
+                                                Successfully extracted information for ~1,300 potential clients worldwide from a list of 25 urls with a code execution time of 20mins. 
+                                            </li>
+                                        </ul>
+                                        <a href="{{ url_for('static', filename='styles/images/Appr_Linux.png') }}" target="_blank" class="card-text">
+                                            <div style="display: flex;">
+                                                <div style="padding: 3px;">
+                                                    <p class="card-text">View acknowledgement</p>
+                                                </div>                                            
+                                                <div style="justify-content: center;">
+                                                    <i class="fa-solid fa-caret-right card-text" style="justify-content: center;"></i>
+                                                </div>
+                                            </div>                                            
+                                        </a>
+                                        <br>
+                                        <div class="workex-card-subtitle" style="font-weight: bold; text-decoration: none;">
+                                            <u>2. Business Pipeline Prediction model</u>
+                                        </div>
+                                        <ul class="card-text">
+                                            <li>
+                                                Developed and deployed a Random Forest model as a classifier to predict the likelihood of converting a lead to a customer
+                                                from the current marketing pipeline 
+                                            </li>
+                                            <li>
+                                                The model was trained on past 3 years of closed pipeline data (Won & Lost deals) consisting of 14 input parameters relating to
+                                                lead attributes.
+                                            </li>
+                                            <li>
+                                                The model will help direct business resources to the leads most likely to convert based on historic trends. 
+                                                A prediction for the same will be available as soon as a lead enters the pipeline
+                                            </li>
+                                        </ul>
+                                        <a href="{{ url_for('static', filename='styles/images/Appr_Yield_2.png') }}" target="_blank" class="card-text">
+                                            <div style="display: flex;">
+                                                <div style="padding: 3px;">
+                                                    <p class="card-text">View acknowledgement</p>
+                                                </div>                                            
+                                                <div style="justify-content: center;">
+                                                    <i class="fa-solid fa-caret-right card-text" style="justify-content: center;"></i>
+                                                </div>
+                                            </div>                                            
+                                        </a>
+                                        <br>                                        
+                                        <div class="workex-card-subtitle" style="font-weight: bold; text-decoration: none;">
+                                            <u>3. Ecosystem Pipeline Analytics</u>
+                                        </div>
+                                        <ul class="card-text">
+                                            <li>
+                                                Publish weekly/monthly marketing pipeline metrics and conduct deep dives to identify gaps in pipeline generation and/or progression
+                                            </li>
+                                            <li>
+                                                Publish and analyse QtQ and YtY performance for IBM Partner Ecosystem
+                                            </li>
+                                            <li>
+                                                Automated the process of generating reports right from SQL extraction to report generation using Python.
+                                            </li>
+                                        </ul>
+                                        <a href="{{ url_for('static', filename='styles/images/Appr_Yield_1.png') }}" target="_blank" class="card-text">
+                                            <div style="display: flex;">
+                                                <div style="padding: 3px;">
+                                                    <p class="card-text">View acknowledgement</p>
+                                                </div>                                            
+                                                <div style="justify-content: center;">
+                                                    <i class="fa-solid fa-caret-right card-text" style="justify-content: center;"></i>
+                                                </div>
+                                            </div>                                            
+                                        </a>
+                                        <br>
+                                    </div>                                        
+                                </div>
+                                <div class="card workex-card">
+                                    <div class="workex-card-header row g-0">
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                            <i class="tata-img"></i>
+                                        </div>
+                                        <div class="workex-card-header-text col-12 col-sm-6 col-lg-9">
+                                            <p class="workex-card-title">
+                                                <b>Tata Technologies</b> 
+                                            </p>                                             
+                                            <p class="workex-card-subtitle">
+                                                Design Engineer
+                                            </p>
+                                            <p class="workex-card-subtitle">
+                                                Aerospace Manufacturing
+                                            </p>                                            
+                                            <p class="workex-card-subtitle">
+                                                July 2015 - May 2018
+                                            </p>
+                                            <p class="workex-card-subtitle">
+                                                35 months
+                                            </p>
+                                        </div>                                        
+                                    </div>
+                                    <br>
+                                    <div class="workex-card-content">
+                                        <div class="workex-card-title">
+                                            <b>Work content</b>
+                                        </div>
+                                        <br>
+                                        <ul class="card-text">
+                                            <li>
+                                                Client - Magellan Aerospace, tier-1 supplier of aerospace components to Airbus.
+                                            </li>
+                                            <li>
+                                                Designed CNC machining programs & zero contatact inspection programs for wing components belonging 
+                                                to the A330, A350 & A380 class of airliners.
+                                            </li>
+                                            <li>
+                                                Responsible for creating and reviewing quality assurance documents to standardize machining process and 
+                                                ensure high quality deliverables in a lean manufacturing environment.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <br>                                      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-btn-div col-12 col-sm-4 col-lg-12">
+                            <button id="education-btn" type="button" class="btn content-nav-btn" data-bs-toggle="collapse" data-bs-target="#education-collapse" aria-expanded="false" aria-controls="work-collapse">
+                                <div class="content-btn row">                                    
+                                    <div class="content-btn-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="content-btn-text col-8 col-sm-8 col-lg-8">
+                                        Education
+                                    </div>
+                                    <div class="content-btn-nav-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse content-collapse" id="education-collapse">
+                            <div class="education-card-div-all row g-0">
+                                <div class="education-card-main-title col-12 col-sm-12 col-lg-12">
+                                    <b>University</b>
+                                </div>
+                                <div class="card education-card-div col-12 col-sm-12 col-lg-12" style="margin: 10px;">                                    
+                                    <div class="education-card row g-0">
+                                        <div class="education-card-icon col-12 col-sm-4 col-lg-5">
+                                            <i class="nmims-img"></i>
+                                        </div>
+                                        <div class="education-card-content col-12 col-sm-8 col-lg-7">
+                                            <div class="education-card-title">
+                                                <b>Masters of Business Administration</b>
+                                            </div>
+                                            <a href="https://sbm.nmims.edu/" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-title">
+                                                        NMIMS, Mumbai
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <div class="education-card-title">
+                                                June 2018 - May 2020
+                                            </div>
+                                            <hr>
+                                            <div class="education-card-text">
+                                                MBA
+                                            </div>
+                                            <div class="education-card-text">
+                                                Data Analytics & Marketing
+                                            </div>
+                                            <div class="education-card-text">
+                                                CGPA - 2.9 / 4.0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div class="card education-card-div-link col-12 col-sm-12 col-lg-12" style="margin: 10px;">                                    
+                                    <div class="education-card row g-0">
+                                        <div class="education-card-icon col-12 col-sm-4 col-lg-5">
+                                            <i class="mitmanipal-img"></i>
+                                        </div>                                            
+                                        <div class="education-card-content col-12 col-sm-8 col-lg-7">
+                                            <div class="education-card-title">
+                                                <b>Bachelors of Technology</b>
+                                            </div>   
+                                            <a href="https://manipal.edu/mit" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-title">
+                                                        Manipal Institute of Technology
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="education-card-title">
+                                                June 2011 - May 2015
+                                            </div>
+                                            <hr>
+                                            <div class="education-card-text">
+                                                B.Tech.
+                                            </div>
+                                            <div class="education-card-text">
+                                                Industrial & Production Engg.
+                                            </div>
+                                            <div class="education-card-text">
+                                                CGPA - 8.3 / 10.0
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                             
+                                <div class="education-card-main-title col-12 col-sm-12 col-lg-12">
+                                    <b>Online Courses</b>
+                                </div>
+                                <div class="card education-card-div col-12 col-sm-12 col-lg-12">                                    
+                                    <div class="education-card row g-0">
+                                        <div class="education-card-icon col-12 col-sm-12 col-lg-12">
+                                            <i class="coursera-img"></i>
+                                        </div>
+                                        <div class="online-education-card-content col-12 col-sm-6 col-lg-6">
+                                            <div class="education-card-subtitle">
+                                                <b>Excel Skills for Business</b>
+                                            </div>
+                                            <a href="https://coursera.org/share/b14ea3a6bcd50fc5e59ef85829679697" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-subtitle">
+                                                        View Certification
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <div class="education-card-subtitle">
+                                                April 2018
+                                            </div>
+                                        </div>
+                                        <div class="online-education-card-content col-12 col-sm-6 col-lg-6">
+                                            <div class="education-card-subtitle">
+                                                <b>Python Programming Essentials</b>
+                                            </div>
+                                            <a href="https://coursera.org/share/1583369b4c92d3f94a4fb75431234560" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-subtitle">
+                                                        View Certification
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <div class="education-card-subtitle">
+                                                Oct 2019
+                                            </div>
+                                        </div>
+                                        <div class="online-education-card-content col-12 col-sm-6 col-lg-6">
+                                            <div class="education-card-subtitle">
+                                                <b>Data Collection and Processing with Python</b>
+                                            </div>
+                                            <a href="https://coursera.org/share/71131fd839a274ec002195b91756c275" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-subtitle">
+                                                        View Certification
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <div class="education-card-subtitle">
+                                                Oct 2019
+                                            </div>
+                                        </div>
+                                        <div class="online-education-card-content col-12 col-sm-6 col-lg-6">
+                                            <div class="education-card-subtitle">
+                                                <b>Data Analysis with Python</b>
+                                            </div>
+                                            <a href="https://coursera.org/share/a35937e106d890b1740f6eb4a57f3e2c" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-subtitle">
+                                                        View Certification
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <div class="education-card-subtitle">
+                                                Dec 2019
+                                            </div>
+                                        </div>
+                                        <div class="online-education-card-content col-12 col-sm-6 col-lg-6">
+                                            <div class="education-card-subtitle">
+                                                <b>Python for Data Science, AI & Development</b>
+                                            </div>
+                                            <a href="https://coursera.org/share/575f2d0e396cb9057437cbacc9b290c0" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-subtitle">
+                                                        View Certification
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <div class="education-card-subtitle">
+                                                July 2020
+                                            </div>
+                                        </div>
+                                        <div class="online-education-card-content col-12 col-sm-6 col-lg-6">
+                                            <div class="education-card-subtitle">
+                                                <b>Neural Networks and Deep Learning</b>
+                                            </div>
+                                            <a href="https://coursera.org/share/d96b951b377d63786b6c00215c36dea4" target="_blank">
+                                                <div class="education-weblink">
+                                                    <div class="education-card-subtitle">
+                                                        View Certification
+                                                    </div>
+                                                    <div style="margin-left: 3%">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <div class="education-card-subtitle">
+                                                Dec 2020
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div> 
+                        <div class="content-btn-div col-12 col-sm-4 col-lg-12">
+                            <button type="button" id="skill-btn" class="btn content-nav-btn" data-bs-toggle="collapse" data-bs-target="#skillset-collapse" aria-expanded="false" aria-controls="skillset-collapse">
+                                <div class="content-btn row">
+                                    <div class="content-btn-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                    <div class="content-btn-text col-8 col-sm-8 col-lg-8">
+                                        Skillset
+                                    </div>
+                                    <div class="content-btn-nav-icon col-2 col-sm-2 col-lg-2">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>                          
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse content-collapse" id="skillset-collapse">
+                            <div class="skillset-all-div row g-0">
+                                <div class="skillset-descr card">
+                                    <ul class="card-text">
+                                        <li>Advanced proficiency in using Python (and related modules) for back end development to achieve end to end automation of project pipeline; right from SQL extraction
+                                            to cloud deployment of the model and dashboard
+                                        </li>
+                                        <li>
+                                            Intermediate proficiency in using front end development technologies like HTML, CSS and Javascript to visualize insights 
+                                            extracted from our models to help facilitate data driven decison decison making.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div class="skillset-div card">
+                                    <div class="skillset-header-text ">
+                                        Data Tools & Languages
+                                    </div>
+                                    <div class="skillset-content row g-0">
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="fab fa-python" style="color:black"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    Python
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-high">
+                                                            Advanced
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="scikit-icon"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    Scikit-learn 
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-med">
+                                                            Intermediate
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="tensorflow-icon"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    TensorFlow 
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-low">
+                                                            Basic
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="fas fa-database" style="color:darkblue"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    SQL 
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-med">
+                                                            Intermediate
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="fab fa-html5" style="color:crimson"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    HTML 
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-high">
+                                                            Advanced
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="fab fa-css3" style="color:dodgerblue"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    CSS 
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-med">
+                                                            Intermediate
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="fab fa-js-square" style="color:black"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    Javascript 
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-low">
+                                                            Basic
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="plotly-icon"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    Dash & Plotly
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-high">
+                                                            Advanced
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="skill-items row g-0">
+                                                <div class="skill-item-icon col-3 col-sm-3 col-lg-3">
+                                                    <i class="docker-icon"></i>
+                                                </div>
+                                                <div class="skill-item-text col-9 col-sm-9 col-lg-9">
+                                                    Dockers
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-lg-12">
+                                                    <div class="skill-item-bar-div col-12 col-sm-12 col-lg-12">
+                                                        <div class="skill-item-bar-low">
+                                                            Basic
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-exp-colp-div">
+                            <button type="button" class="btn exp-colp-btn" id="content-exp-btn" onclick="toggleFunction_expand()">
+                                <div class="content-exp-div">
+                                    <div class="content-exp-text">
+                                        Expand all
+                                    </div>
+                                    <div class="content-exp-icon">
+                                        <i class="fas fa-expand-alt"></i>
+                                    </div>                                
+                                </div>
+                            </button>
+                            <button type="button" class="btn exp-colp-btn" id="content-colp-btn" onclick="toggleFunction_collapse()">
+                                <div class="content-colp-div">
+                                    <div class="content-colp-text">
+                                        Collapse all
+                                    </div>
+                                    <div class="content-colp-icon">
+                                        <i class="fas fa-compress-alt"></i>
+                                    </div>                               
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse show col-12 col-sm-4 col-lg-3 mx-0 px-0" id='contact-det-collapse' onclick="toggleFunction_2()">
+                    <div class="header-social-all-div">
+                        <div class="header-social-highlt-all-div">
+                            <button id="pers-det-btn" type="button" class="btn cont-btn" data-bs-toggle="collapse" data-bs-target="#pers-det-collapse" aria-expanded="false" aria-controls="pers-det-collapse">
+                                <div class="header-social-highlt-div">                                        
+                                    <div class="header-social-highlt-text col">
+                                        Personal&nbsp;Details
+                                    </div>
+                                    <div class="header-social-highlt-icon col">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="pers-det-collapse">
+                            <div class="header-social-content-all-div">
+                                <a href="https://www.linkedin.com/in/manu-gupta-007/" class="a-nav-links">
+                                    <div class="header-social-div">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="header-social-icon">                                
+                                                    <i class="fab fa-linkedin"></i>                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="header-social-text">
+                                                        <b>LinkedIn Profile</b>
+                                                    </div>
+                                                    <div class="header-social-text">
+                                                        manu-gupta-007
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                   
+                                    </div>
+                                </a>
+                                <a href="https://github.com/MG9510" class="a-nav-links">
+                                    <div class="header-social-div">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="header-social-icon">
+                                                    <i class="fab fa-github"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="header-social-text">
+                                                        <b>GitHub Profile</b>                                                        
+                                                    </div>
+                                                    <div class="header-social-text">
+                                                        MG9510
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                   
+                                    </div>
+                                </a>  
+                            </div> 
+                        </div>                                                   
+                        <div class="header-social-highlt-all-div">
+                            <button id="cont-det-btn" type="button" class="btn cont-btn" data-bs-toggle="collapse" data-bs-target="#cont-det-collapse" aria-expanded="false" aria-controls="cont-det-collapse">
+                                <div class="header-social-highlt-div">                                        
+                                    <div class="header-social-highlt-text col">
+                                        Contact&nbsp;Details
+                                    </div>
+                                    <div class="header-social-highlt-icon col">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="collapse show" id="cont-det-collapse">
+                            <div class="header-social-content-all-div row">
+                                <div class="header-social-div">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="header-social-icon">
+                                                <i class="fas fa-map-marked-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="row">
+                                                <div class="header-social-text">
+                                                    <b>Location</b>
+                                                </div>
+                                                <div class="header-social-text">
+                                                    Bangalore, India
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-social-div">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="header-social-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="row">
+                                                <div class="header-social-text">
+                                                    <b>Gmail ID</b>
+                                                </div>
+                                                <div class="header-social-text">
+                                                    manu.gupta93.home
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                             
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='styles/appJS.js') }}"></script>
+    </footer>
+</html>

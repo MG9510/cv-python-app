@@ -8,6 +8,43 @@ body {
     padding: 0px;
 }
 
+.block-elem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: slategrey;
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
 .a-nav-links {
     text-decoration: none;
 }
@@ -397,6 +434,10 @@ body {
 
 /* Mobile Devices */
 @media (max-width: 576px) {
+
+    .swiper-div {
+        width: 400px;
+    }
     
     .tensorflow-icon, .scikit-icon, .plotly-icon,
     .docker-icon {
@@ -568,6 +609,10 @@ body {
 
 /* Tablets */
 @media (min-width: 576px) and (max-width: 990px) {
+
+    .swiper-div {
+        width: 500px;
+    }
 
     .tensorflow-icon, .scikit-icon, .plotly-icon,
     .docker-icon {
@@ -747,6 +792,10 @@ body {
 /* Desktop/Laptops */
 @media (min-width: 990px) and (max-width: 1500px) {
 
+    .swiper-div {
+        width: 500px;
+    }
+
     .tensorflow-icon, .scikit-icon, .plotly-icon, 
     .docker-icon {
         height: 54px;
@@ -916,6 +965,10 @@ body {
 
 /* Desktop/Laptops */
 @media (min-width: 1500px) {
+
+    .swiper-div {
+        width: 600px;
+    }
 
     .tensorflow-icon, .scikit-icon, .plotly-icon, 
     .docker-icon {

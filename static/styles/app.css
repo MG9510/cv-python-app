@@ -34,12 +34,12 @@ body {
     align-items: center;
 }
 
-.swiper-div {
+.swiper-div-online {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: slategrey;
-    color: white;
+    background-color: wheat;
+    color: black;
     margin: 15px;
     padding: 15px;
     border-radius: 25px;
@@ -465,7 +465,7 @@ body {
     }
 
     .coursera-img {
-        max-width: 100%;
+        width: 300px;
         height: 100px;
         object-fit: contain;
         border-radius: 5px;
@@ -639,7 +639,7 @@ body {
     }
 
     .coursera-img {
-        max-width: 100%;
+        width: 400px;
         height: 120px;
         object-fit: contain;
         border-radius: 10px;
@@ -822,7 +822,7 @@ body {
     }
 
     .coursera-img {
-        max-width: 100%;
+        width: 500px;
         height: 180px;
         object-fit: contain;
         /* border-radius: 10px; */
@@ -995,7 +995,7 @@ body {
     }
 
     .coursera-img {
-        max-width: 100%;
+        width: 600px;
         height: 250px;
         object-fit: contain;
         margin: 1%;
